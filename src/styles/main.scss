@@ -1,17 +1,24 @@
 @use 'hero';
-@use "./components/infos-bar";
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'event';
+@use 'variables';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: variables.$textColor;
+    list-style: none;
 }
 
+.container__geral {
+    background-image: linear-gradient(variables.$red, variables.$darkBlue);
+}
 .container {
-    max-width: 960px;
-    width: 100%;
+    max-width: 900px;
+    width: 50%;
     margin: 0 auto;
-
 
     @media (max-width: 640px) {
         max-width: 80%;

@@ -5,31 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício Módulo 22</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+<div class="container__geral">
     <header class="hero">
         <div class="container">
             <p class="hero__text">
-                Contagem regressiva ativada! Estou ansioso para comemorar meu aniversário e quero você lá. Vamos fazer a contagem regressiva juntos!
+                A festa começa em: <br>
+                <span id="contador"></span>
             </p>
-            <div class="infor-bar">
+            <div class="infos-bar">
                 <ul class="infos-bar__infos">
                     <li class="infos-bar__infos__item">
-                        <b>Local</b>
+                        <b>Localização</b>
+                        Rio de Janeiro
                     </li>
                     <li class="infos-bar__infos__item">
-                        <b>Atrações</b>
-                    </li>
-                    <li class="infos-bar__infos__item">
-                        <b>Informações</b>
+                        <b>Data e Horário</b>
+                        13/07/2024 às 19hrs
                     </li>
                 </ul>
                 <a href="#" class="button button--primary">
-                    Confirme a sua presença
+                    Confirme a sua presença!
                 </a>
             </div>
         </div>
     </header>
+
+    <section class="event" data-aos="fade-down">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Saudações</h2>
+                <p class="evnet__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam pariatur, obcaecati, consequuntur sunt, corporis tenetur deserunt hic aliquam ipsam corrupti quasi! Vel ab, voluptatem mollitia hic assumenda aut aliquam.
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
+

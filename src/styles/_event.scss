@@ -1,0 +1,28 @@
+@use 'variables';
+
+.event {
+    padding: 80px 0;
+
+    .container {
+        display: flex;
+    }
+
+    &_image {
+        max-width: 360px;
+    }
+
+    &__details {
+        margin-right: 40px;
+
+        &__title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        &__description {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+}
