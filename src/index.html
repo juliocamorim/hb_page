@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício Módulo 22</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -12,8 +15,7 @@
     <header class="hero">
         <div class="container">
             <p class="hero__text">
-                A festa começa em: <br>
-                <span id="contador"></span>
+                A festa começa em: <br> <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -25,24 +27,65 @@
                         <b>Data e Horário</b>
                         13/07/2024 às 19hrs
                     </li>
+                    <a href="#" class="button button--primary">
+                        Confirme a sua presença!
+                    </a>
                 </ul>
-                <a href="#" class="button button--primary">
-                    Confirme a sua presença!
-                </a>
+                
             </div>
         </div>
     </header>
 
-    <section class="event" data-aos="fade-down">
+    <section class="intro" data-aos="fade-down">
         <div class="container">
-            <div class="event__details">
-                <h2 class="event__details__title">Saudações</h2>
-                <p class="evnet__details__description">
+            <div class="intro__details">
+                <h2 class="intro__details__title">Olá,</h2>
+                <p class="intro__details__description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate totam pariatur, obcaecati, consequuntur sunt, corporis tenetur deserunt hic aliquam ipsam corrupti quasi! Vel ab, voluptatem mollitia hic assumenda aut aliquam.
                 </p>
             </div>
         </div>
     </section>
+
+    <section class="event" data-aos="fade-down">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Espaço</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, temporibus molestiae voluptatibus ipsam iure ab. Culpa alias delectus omnis molestiae, molestias error fugiat ipsa minima magni vel quo, accusantium eaque.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem eveniet voluptas dolorem debitis cum adipisci hic obcaecati iusto autem amet aliquam laborum laudantium iste quisquam, eligendi quas ullam asperiores? Recusandae.
+                </p>
+            </div>
+            <img class="event__image" src="./images/espaço.png" alt="Espaço da Festa">
+        </div>
+    </section>
+
+    <section class="event event--image-left" data-aos="fade-down">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Bebidas</h2>
+                <p class="event__details__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum temporibus quasi sint obcaecati rem. Accusamus expedita, eaque ipsum perferendis laborum qui? Ducimus sequi distinctio architecto quisquam suscipit recusandae et accusantium.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos unde dolorem enim vel porro quae expedita quaerat dolores doloremque culpa, assumenda illum adipisci ullam eveniet voluptates nihil deleniti quasi. Voluptate!
+                </p>
+            </div>
+            <img  class="event__image" src="./images/drinks.png" alt="Bebidas">
+        </div>
+    </section>
+
+    <section class="event" data-aos="fade-down">
+        <div class="container">
+            <div class="event__details">
+                <h2 class="event__details__title">Comidas</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, est. Fuga, nam. Non amet quia quisquam voluptatem odio itaque et saepe nostrum illo vitae, doloremque, quos quis autem possimus ex!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum fugit quisquam odio deleniti incidunt ab vero modi illo amet reprehenderit, soluta aperiam. Id provident exercitationem recusandae voluptate magni molestias aperiam?
+                </p>
+            </div>
+            <img class="event__image" src="./images/foods.png" alt="Comidas">
+        </div>
+    </section>
+
 </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>

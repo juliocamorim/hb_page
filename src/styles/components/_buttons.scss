@@ -8,10 +8,12 @@
     text-align: center;
     white-space: nowrap;
     border-radius: 5px;
+    
 
     &--primary {
         color: variables.$secondaryTextColor;
         background-color: variables.$textColor;
+        display: center;
     }
 
     @media (max-width: 640px) {

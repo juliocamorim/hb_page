@@ -3,9 +3,6 @@
 .hero {
     padding-top: 64px;
     padding-bottom: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 
     .container {
         position: relative;
@@ -14,8 +11,9 @@
     }
 
     &__text {
-        margin-top: 40px;
-        padding-top: 20px;
+        margin-top: 64px;
+        padding-bottom: 20px;
+        padding-top: 40px;
         font-size: 40px;
         line-height: 56px;
         color: variables.$textColor;

@@ -1,6 +1,7 @@
 @use 'hero';
 @use 'components/infos_bar';
 @use 'components/buttons';
+@use 'intro';
 @use 'event';
 @use 'variables';
 
@@ -10,10 +11,11 @@
     box-sizing: border-box;
     color: variables.$textColor;
     list-style: none;
+    font-family: Roboto, sans-serif;
 }
 
 .container__geral {
-    background-image: linear-gradient(variables.$red, variables.$darkBlue);
+    background-image: linear-gradient(variables.$darkBlue, variables.$black);
 }
 .container {
     max-width: 900px;

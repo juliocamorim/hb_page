@@ -2,19 +2,22 @@
 
 .infos-bar {
     padding: 20px 40px;
-    background-color: variables.$secondaryTextColor;
     border-radius: 5px;
-    display: flex;
-    justify-content: space-around;
+    background-color: variables.$secondaryTextColor;
     color: variables.$textColor;
-    
+    display: flex;
+    justify-content: space-between;
+
     &__infos {
+        margin: 0 auto;
         display: flex;
-        gap: 100px;
+        gap: 80px;
 
         &__item {
             color: variables.$textColor;
             font-size: 14px;
+            cursor: pointer;
+            
 
             b {
                 color: variables.$textColor;
