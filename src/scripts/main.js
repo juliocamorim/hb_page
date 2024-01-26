@@ -16,12 +16,14 @@ const contaAsHoras = setInterval(function() {
     const diasAteOEvento = Math.floor(distanciaAteOEvento / diaEmMs)
     const horasAteOEvento =  Math.floor((distanciaAteOEvento % diaEmMs) / horaEmMs)
     const minutosAteOEvento = Math.floor((distanciaAteOEvento % horaEmMs) / minutoEmMs);
-    const segundosAteOEvento = Math.floor((distanciaAteOEvento % minutoEmMs) / 1000);
-    
-    console.log(diasAteOEvento);
-    console.log(horasAteOEvento);
-    console.log(minutosAteOEvento);
-    console.log(segundosAteOEvento);
+    const segundosAteOEvento = Math.floor((distanciaAteOEvento % minutoEmMs) / 1000)
 
     document.getElementById('contador').innerHTML = `${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}S`
+
+
+    if (distanciaAteOEvento < 0) {
+        clearInterval(contaAsHoras);
+        document.getElementById('contador').innerHTML = `Está festa já acabou!`
+    }
+
 }, 1000);
